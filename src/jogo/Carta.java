@@ -5,7 +5,6 @@ public class Carta {
 	private int numero;
 	
 	public Carta(String naipe, int numero) {
-		super();
 		this.naipe = naipe;
 		this.numero = numero;
 	}

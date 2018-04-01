@@ -1,5 +1,7 @@
 package jogo;
 
+import java.util.List;
+
 public interface AlgoritmoDasCartas {
-	public void distribuirCartas();
+	public List<Carta> distribuirCartas(Baralho b);
 }
