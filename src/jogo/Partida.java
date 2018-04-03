@@ -71,6 +71,7 @@ public class Partida {
 	
 	public Partida() {
 		this.jogadas = new Jogada();
+		this.jogadas.getDeck().embaralhar();
 		initialize();
 		
 		// populando os campos

@@ -21,11 +21,10 @@ public class Baralho {
 				cartas.add(c);
 			}
 		}
-		
-		Collections.shuffle(cartas);
 	}	
 
 	public void embaralhar() {
+		Collections.shuffle(this.cartas);
 	}
 
 	public List<Carta> getCartas() {
