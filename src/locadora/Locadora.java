@@ -10,6 +10,6 @@ public class Locadora {
         c1.adicionaAluguel(new Aluguel(new Fita("Pateta no Planeta dos Macacos ", Fita.INFANTIL), 10));
         c1.adicionaAluguel(new Aluguel(new Fita("O Rei Leao                    ", Fita.INFANTIL), 30));
 
-        System.out.println(c1.extrato());
+        System.out.println(c1.extratoTotal());
     }
 }

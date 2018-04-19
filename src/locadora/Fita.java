@@ -11,13 +11,16 @@ public class Fita {
         this.titulo = titulo;
         this.codigoDePreco = codigoDePreco;
     }
-    public String gettitulo() {
+
+    public String getTitulo() {
         return titulo;
     }
-    public int getcodigoDePreco() {
+
+    public int getCodigoDePreco() {
         return codigoDePreco;
     }
-    public void setcodigoDePreco(int codigoDePreco) {
+
+    public void setCodigoDePreco(int codigoDePreco) {
         this.codigoDePreco = codigoDePreco;
     }
 }
