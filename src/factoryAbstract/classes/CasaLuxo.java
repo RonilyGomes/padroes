@@ -1,20 +1,30 @@
 package classes;
 
+import enuns.CasaEnum;
+import enuns.ComodoEnum;
+import factory.ComodoFactory;
+
 public class CasaLuxo extends Casa{
-    
-    @Override
+
     public CasaLuxo(CasaEnum tipo) {
-        this.tipo = tipo;
-        this.comodos.add(ComodoFactory.create(ComodoEnum.BANHEIRO, CasaEnum.LUXO));
-        this.comodos.add(ComodoFactory.create(ComodoEnum.BANHEIRO, CasaEnum.LUXO));
-        this.comodos.add(ComodoFactory.create(ComodoEnum.BANHEIRO, CasaEnum.LUXO));
-        
-        this.comodos.add(ComodoFactory.create(ComodoEnum.SALA, CasaEnum.LUXO));
-        this.comodos.add(ComodoFactory.create(ComodoEnum.SALA, CasaEnum.LUXO));
-        this.comodos.add(ComodoFactory.create(ComodoEnum.SALA, CasaEnum.LUXO));
-        
-        this.comodos.add(ComodoFactory.create(ComodoEnum.OUTRO, CasaEnum.LUXO));
-        this.comodos.add(ComodoFactory.create(ComodoEnum.OUTRO, CasaEnum.LUXO));
-        this.comodos.add(ComodoFactory.create(ComodoEnum.OUTRO, CasaEnum.LUXO));
+        super(tipo);
+        this.setTipo(tipo);
+
+        try {
+            this.getComodos().add(ComodoFactory.create(ComodoEnum.BANHEIRO, CasaEnum.LUXO));
+            this.getComodos().add(ComodoFactory.create(ComodoEnum.BANHEIRO, CasaEnum.LUXO));
+            this.getComodos().add(ComodoFactory.create(ComodoEnum.BANHEIRO, CasaEnum.LUXO));
+
+            this.getComodos().add(ComodoFactory.create(ComodoEnum.SALA, CasaEnum.LUXO));
+            this.getComodos().add(ComodoFactory.create(ComodoEnum.SALA, CasaEnum.LUXO));
+            this.getComodos().add(ComodoFactory.create(ComodoEnum.SALA, CasaEnum.LUXO));
+
+            this.getComodos().add(ComodoFactory.create(ComodoEnum.OUTRO, CasaEnum.LUXO));
+            this.getComodos().add(ComodoFactory.create(ComodoEnum.OUTRO, CasaEnum.LUXO));
+            this.getComodos().add(ComodoFactory.create(ComodoEnum.OUTRO, CasaEnum.LUXO));
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

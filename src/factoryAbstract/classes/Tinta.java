@@ -1,17 +1,19 @@
 package classes;
 
+import enuns.TintaEnum;
+
 public class Tinta {
     private TintaEnum tipo;
     
     public Tinta(TintaEnum tipo) {
         this.tipo = tipo;
     }
-    
+
     public TintaEnum getTipo() {
-        return this.tipo;
+        return tipo;
     }
-    
-    public Void setTipo(TintaEnum tipo) {
+
+    public void setTipo(TintaEnum tipo) {
         this.tipo = tipo;
     }
 }

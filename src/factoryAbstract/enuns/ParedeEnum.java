@@ -1,6 +1,6 @@
-package enum;
+package enuns;
 
-public Enum ParedeEnum {
+public enum ParedeEnum {
     GESSO, ALVENARIA, ALVENARIA_DRY_WALL;
 }
 

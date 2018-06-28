@@ -1,17 +1,19 @@
 package classes;
 
+import enuns.ParedeEnum;
+
 public class Parede {
     private ParedeEnum tipo;
-    
-    public parede(ParedeEnum tipo) {
+
+    public Parede(ParedeEnum tipo) {
         this.tipo = tipo;
     }
-    
+
     public ParedeEnum getTipo() {
-        return this.tipo;
+        return tipo;
     }
-    
-    public Void setTipo(ParedeEnum tipo) {
+
+    public void setTipo(ParedeEnum tipo) {
         this.tipo = tipo;
     }
 }

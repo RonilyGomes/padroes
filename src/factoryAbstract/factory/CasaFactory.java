@@ -1,6 +1,7 @@
 package factory;
 
 import classes.*;
+import enuns.CasaEnum;
 
 public abstract class CasaFactory {
     public static Casa create(CasaEnum tipo) {
@@ -10,10 +11,7 @@ public abstract class CasaFactory {
         else if(tipo == CasaEnum.CONFORTAVEL) {
             return new CasaConfortavel(tipo);
         }
-        else if(tipo == CasaEnum.LUXO) {
-            return new CasaLuxo(tipo);
-        }
-        
-        return new throw Exception;
+
+        return new CasaLuxo(tipo);
     }
 }

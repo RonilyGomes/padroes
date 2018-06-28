@@ -1,17 +1,19 @@
 package classes;
 
+import enuns.PortaEnum;
+
 public class Porta {
     private PortaEnum tipo;
     
     public Porta(PortaEnum tipo) {
         this.tipo = tipo;
     }
-    
+
     public PortaEnum getTipo() {
-        return this.tipo;
+        return tipo;
     }
-    
-    public Void setTipo(PortaEnum tipo) {
+
+    public void setTipo(PortaEnum tipo) {
         this.tipo = tipo;
     }
 }

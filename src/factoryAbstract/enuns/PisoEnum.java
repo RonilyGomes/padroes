@@ -1,5 +1,5 @@
-package enum;
+package enuns;
 
-public Enum PisoEnum {
+public enum PisoEnum {
     CERAMICA, CERAMICA_ESMALTADA, PORCELANATO;
 }
